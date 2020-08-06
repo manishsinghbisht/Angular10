@@ -1,0 +1,92 @@
+<p>test component works!</p>
+<p>Interpolation:
+    {{myVar + ' - ' + yourVar.toUpperCase()}}
+</p>
+
+<p>
+    Functions:
+    {{greetUser()}}
+</p>
+
+<p>
+    Window location attrs:
+    {{siteUrl}}
+</p>
+<p>
+    Property Binding:
+    <input [id]="myId" type="text" value="Ram">
+
+    <input bind-id="myId" [disabled]="isDisabled" type="text" value="Shyam">
+</p>
+<p>Template to TS Binding:
+    <button (click)=onClick($event)>Greet</button>
+    {{greetMesssage}}
+</p>
+<p>Template reference vars:
+    <input #myInput type="text" value="This is data">
+    <button (click)=logData(myInput.value)>Log</button>
+</p>
+<p>Two ways binding ngModel:
+    <input #myInput [(ngModel)]="twowayBindedVar" type="text" value="This is data">
+    {{twowayBindedVar}}
+</p>
+
+<div>
+    ngIf implementation:
+
+    <div *ngIf="ifCond; then thenBlock; else elseBlock">My comments</div>
+
+    <ng-template #thenBlock>
+        <label>Cond true block comments </label>
+    </ng-template>
+
+    <ng-template #elseBlock>
+        <label>else block comments </label>
+    </ng-template>
+</div>
+<div>
+    <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'">You picked red color!</div>
+        <div *ngSwitchCase="'blue'">You picked blue color!</div>
+        <div *ngSwitchCase="'green'">You picked green color!</div>
+        <div *ngSwitchDefault>Pick color again..</div>
+    </div>
+</div>
+<div>
+    ngfor:-
+    <div *ngFor="let color of colors; index as i">
+        <label>{{i}} - {{color}}</label>
+
+    </div>
+</div>
+<div>
+    parent to child:
+    {{"Hello " + data_rcvd_from_parent}}
+</div>
+<div>
+    child to parent:
+    <button (click)="fireChildEvent()">Child Event</button>
+</div>
+<div>
+    <h3> {{1.25 | currency}}</h3>
+    <h3> {{6.50 | currency: 'INR'}}</h3>
+    <h3> {{7.60 | currency: 'INR':'code'}}</h3>
+    <h3>{{ date }}</h3>
+    <h3>{{ date | date:'short'}}</h3>
+    <h3>{{ date | date:'shortDate'}}</h3>
+    <h3>{{ date | date:'shortTime'}}</h3>
+    <h3>{{ date | date:'mediumDate'}}</h3>
+    <h3>{{ date | date:'mediumTime'}}</h3>
+
+    <h3>{{ date | date:'longDate'}}</h3>
+    <h3>{{ date | date:'longTime'}}</h3>
+
+</div>
+
+<div>
+    Using service:
+    <div>{{errorMsg}}</div>
+    <ul *ngFor="let emp of employees; index as i">
+        <li>{{i}} - {{emp.Id + " - " + emp.name + " - "+ emp.age}}</li>
+    </ul>
+</div>

@@ -1,0 +1,32 @@
+[
+    {
+        "Id": 1,
+        "name": "Angular",
+        "rating": 30
+    },
+    {
+        "Id": 2,
+        "name": "Node",
+        "rating": 31
+    },
+    {
+        "Id": 3,
+        "name": "MongoDB",
+        "rating": 32
+    },
+    {
+        "Id": 4,
+        "name": "C#",
+        "rating": 33
+    },
+    {
+        "Id": 5,
+        "name": "Python",
+        "rating": 40
+    },
+    {
+        "Id": 6,
+        "name": "Go",
+        "rating": 13
+    }
+]

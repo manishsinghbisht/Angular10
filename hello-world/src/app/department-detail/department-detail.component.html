@@ -1,0 +1,14 @@
+<h3>You selected the department with Id = {{departmentId}}</h3>
+<p>department-detail works!</p>
+<div>
+    <button (click)="showOverview()">Overview</button>
+    <button (click)="showContact()">Contact</button>
+</div>
+<router-outlet></router-outlet>
+<div>
+<button class="btn btn-primary" (click)="goPrevious()">Previous</button>
+<button class="btn btn-primary" (click)="goNext()">Next</button>
+</div>
+<div>
+    <button (click)="goToDepartments()">Back</button>
+</div>

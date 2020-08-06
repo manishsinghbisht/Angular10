@@ -1,0 +1,15 @@
+ng generate service <name>
+
+ng generate serviceWorker [options]
+
+ng generate component <name>
+
+ng generate directive <name>
+
+ng generate enum <name>
+
+ng generate interface <name> <type>
+
+ng generate module <name>
+
+ng generate pipe <name>

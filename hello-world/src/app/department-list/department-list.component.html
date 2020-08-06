@@ -1,0 +1,7 @@
+<h3>department-list</h3>
+
+<div>
+    <ul *ngFor="let department of departments; index as i">
+        <li (click) = "onSelect(department)" [class.selected]="isSelected(department)">{{department.Id + " - " + department.name + " - "+ department.rating}}</li>
+    </ul>
+</div>
