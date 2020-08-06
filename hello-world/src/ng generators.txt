@@ -13,3 +13,8 @@ ng generate interface <name> <type>
 ng generate module <name>
 
 ng generate pipe <name>
+
+------
+git add --all
+git remote add origin https://github.com/manishsinghbisht/Angular10.git
+git push -u origin master
