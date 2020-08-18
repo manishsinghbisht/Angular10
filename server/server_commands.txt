@@ -1,7 +1,7 @@
 Commands to setup server:
 
 npm init --yes
-npm install --save express body-parser cors
+npm install --save express body-parser cors 
 
 
 node server
